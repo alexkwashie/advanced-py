@@ -13,14 +13,15 @@ def ask_number():
 magic_numbers= [3,8]
 
 chances = 4
+
+num_of = int(input("Enter number of times prog should run: "))
+
 def loop_num(i):
     for ie in range(i):
         print("This is you  number {}".format(ie))
         ask_number()
 
-loop_num(7);
-
-
+loop_num(num_of);
 
 print("This is then End")
 
@@ -39,4 +40,5 @@ print("This is then End")
 #         min = ran
 
 # print(min)
+
 
