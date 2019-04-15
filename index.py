@@ -1,3 +1,5 @@
+#################-Working with Random()################
+'''
 import random
 
 
@@ -6,7 +8,7 @@ def ask_number():
     if u_input in magic_numbers:
         print("You are in!")
     else:
-        print("You are out")
+        return "You are out"
 
 
 
@@ -24,9 +26,7 @@ def loop_num(i):
 loop_num(num_of);
 
 print("This is then End")
-
-
-
+'''
 
 
 
@@ -41,4 +41,43 @@ print("This is then End")
 
 # print(min)
 
+
+
+#################-Split()################
+'''
+num =[]
+pop = 0
+pll = 5
+for i in range(int(pll)):
+    num1 = input("Enter number")
+    num.append(num1)
+    pop=pop+1
+
+print(num)
+
+
+
+
+#OR#
+
+
+
+num1 = input("Enter numbers, seperate by a comma: ")
+
+print(num1.split(","))
+
+print(num1)
+'''
+
+
+#################-Python Set()################
+number = [3,2,2,4,2,13]
+
+number = set()
+
+number.add(2)
+number.add(1)
+number.add(2)
+
+print(number) #{1,2}
 
