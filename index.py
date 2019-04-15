@@ -81,3 +81,40 @@ number.add(2)
 
 print(number) #{1,2}
 
+
+number1 = {3,4,4,1,3,4}
+number2 = {8,4,6,3,2,5}
+number3 = {12,2,6,4,2,5}
+#intersecting 2 sets
+neww = number1.intersection(number2)
+print(neww.intersection(number3))
+
+
+#eg.
+#User can pick 6 numbers
+#Lotery calculates 6 numbers (between 1 and 20)
+#Then we match the user numbers to the lottery
+#Calculate the winnings based on how many numbers user matched
+
+winning_num = [4,8,3,2,5]
+
+def get_user_number():
+        user_num = input("Please enter six number: ")
+
+        numlist = user_num.split(",")
+
+        num_set = {int(numb) for numb in numlist}
+
+        winnings = set(winning_num)
+
+        newz = num_set.intersection(winnings)
+
+        if len(newz) > 2:
+                print("Winner")
+        else:
+                print("You Lost")
+
+print(get_user_number())
+
+
+
