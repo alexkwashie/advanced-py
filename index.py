@@ -90,14 +90,11 @@ neww = number1.intersection(number2)
 print(neww.intersection(number3))
 
 
-#eg.
-#User can pick 6 numbers
-#Lotery calculates 6 numbers (between 1 and 20)
-#Then we match the user numbers to the lottery
-#Calculate the winnings based on how many numbers user matched
+#egxamples
 
 winning_num = [4,8,3,2,5]
 
+#User can pick 6 numbers
 def get_user_number():
         user_num = input("Please enter six number: ")
 
@@ -105,16 +102,25 @@ def get_user_number():
 
         num_set = {int(numb) for numb in numlist}
 
-        winnings = set(winning_num)
-
-        newz = num_set.intersection(winnings)
-
-        if len(newz) > 2:
-                print("Winner")
-        else:
-                print("You Lost")
+        return (num_set)
 
 print(get_user_number())
 
 
+
+#Lottery calculates 6 numbers (between 1 and 20)
+import random
+
+listz = set()  #Note: Cannot initalise like so: {}
+def create_lottery_numbers():
+        for num in range(6):
+                listz.add(random.randint(1,20))
+        return listz
+
+
+
+#create_lottery_numbers()
+
+#Then we match the user numbers to the lottery
+#Calculate the winnings based on how many numbers user matched
 
