@@ -104,7 +104,7 @@ def get_user_number():
 
         return (num_set)
 
-print(get_user_number())
+#print(get_user_number())
 
 
 
@@ -113,14 +113,19 @@ import random
 
 listz = set()  #Note: Cannot initalise like so: {}
 def create_lottery_numbers():
-        for num in range(6):
+        while len(listz) < 6: #this means while the set is less than 6 run the code below
                 listz.add(random.randint(1,20))
         return listz
 
+print(create_lottery_numbers())
 
 
-#create_lottery_numbers()
+
+
+
 
 #Then we match the user numbers to the lottery
+
+
 #Calculate the winnings based on how many numbers user matched
 
